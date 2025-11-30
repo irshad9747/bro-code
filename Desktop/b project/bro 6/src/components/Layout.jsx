@@ -53,7 +53,7 @@ const Layout = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <img src="/logo.png" alt="BRO FIX" className="h-10" />
+              <img src="/bro-code/logo.png" alt="BRO FIX" className="h-10" />
             </div>
 
             {/* Desktop Navigation */}
