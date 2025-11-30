@@ -33,7 +33,7 @@ const AppRoutes = () => {
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/bro-code">
         <AppRoutes />
       </Router>
     </AuthProvider>
