@@ -6,6 +6,8 @@ on:
       - main
   workflow_dispatch:
 
+# This workflow deploys the React app to GitHub Pages
+
 permissions:
   contents: read
   pages: write
