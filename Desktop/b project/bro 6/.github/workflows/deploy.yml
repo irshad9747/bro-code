@@ -26,16 +26,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
       
       - name: Find project directory
         id: find-project
         run: |
           if [ -f "package.json" ]; then
             echo "dir=." >> $GITHUB_OUTPUT
-          elif [ -d "Desktop/b project/bro 6" ]; then
+            echo "Found package.json at root"
+          elif [ -f "Desktop/b project/bro 6/package.json" ]; then
             echo "dir=Desktop/b project/bro 6" >> $GITHUB_OUTPUT
+            echo "Found package.json in Desktop/b project/bro 6"
           else
+            echo "Listing directory contents:"
+            ls -la
             echo "Project directory not found"
             exit 1
           fi
